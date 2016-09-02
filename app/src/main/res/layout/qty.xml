@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/maintoolbar1"
+            android:background="@color/pink">
+
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/second"
+                android:textColor="@color/pink"
+                android:textSize="@dimen/about"/>
+            <View
+                android:layout_width="135dp"
+                android:layout_height="2dp"
+                android:background="@color/pink"
+                ></View>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:orientation="horizontal"
+            android:weightSum="4">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Items"
+                android:layout_weight="1"
+                android:textSize="@dimen/about1"
+                android:textColor="@color/pink"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rate"
+                android:layout_marginStart="80dp"
+                android:layout_weight="1"
+                android:textSize="@dimen/about1"
+                android:textColor="@color/pink"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:text="Value"
+                android:layout_weight="1"
+                android:textSize="@dimen/about1"
+                android:textColor="@color/pink"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Qty"
+                android:layout_weight="1"
+                android:layout_marginStart="50dp"
+                android:textSize="@dimen/about1"
+                android:textColor="@color/pink"
+                />
+
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="9"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Popcorn"
+                        android:textColor="@color/ColorName1"
+                        android:id="@+id/popcorn"
+                        android:layout_weight="1"
+
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="70"
+                        android:textColor="@color/ColorName1"
+                        android:id="@+id/popcornrate"
+                        android:layout_marginStart="100dp"
+                        android:layout_weight="1"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="#0004ff"
+                        android:layout_marginStart="70dp"
+                        android:id="@+id/popcornvalue"
+                        android:layout_weight="1"
+
+                        />
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginRight="30dp"
+                        android:id="@+id/popcornspinner"
+                        android:layout_weight="1"
+
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Popcorn Caramel"
+                        android:id="@+id/popcara"
+                        android:textColor="@color/ColorName1"
+                        android:layout_weight="1"
+
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="110"
+                        android:id="@+id/caramelrate"
+                        android:layout_marginStart="100dp"
+                        android:textColor="@color/ColorName1"
+                        android:layout_weight="1"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/caramelvalue"
+                        android:textColor="#0004ff"
+                        android:text="0"
+                        android:layout_marginStart="70dp"
+                        android:layout_weight="1"
+
+                        />
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginStart="40dp"
+                        android:id="@+id/caramelspinner"
+                        android:layout_weight="1"
+
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Popcorn Large"
+                        android:textColor="@color/ColorName1"
+                        android:id="@+id/waterbottle"
+                        android:layout_weight="1"
+
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="120"
+                        android:id="@+id/poplargerate"
+                        android:textColor="@color/ColorName1"
+                        android:layout_marginStart="100dp"
+                        android:layout_weight="1"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/poplargevalue"
+                        android:textColor="#0004ff"
+                        android:text="0"
+                        android:layout_marginStart="70dp"
+                        android:layout_weight="1"
+
+                        />
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginStart="40dp"
+                        android:id="@+id/poplargespinner"
+                        android:layout_weight="1"
+
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Veg Puff"
+                        android:textColor="@color/ColorName1"
+                        android:id="@+id/vegpuff"
+                        android:layout_weight="1"
+
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="50"
+                        android:id="@+id/vegpuffrate"
+                        android:layout_marginStart="100dp"
+                        android:textColor="@color/ColorName1"
+                        android:layout_weight="1"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/vegpuffvalue"
+                        android:textColor="#0004ff"
+                        android:text="0"
+                        android:layout_marginStart="70dp"
+                        android:layout_weight="1"
+
+                        />
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginStart="40dp"
+                        android:id="@+id/vegpuffspinner"
+                        android:layout_weight="1"
+
+                        />
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="2">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Total"
+                        android:id="@+id/total"
+                        android:textSize="20dp"
+                        android:textColor="#0004ff"
+                        android:layout_weight="1"
+                        ></TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/totalvalue"
+                        android:text="0"
+                        android:textSize="20dp"
+                        android:textColor="#0004ff"
+                        android:layout_marginStart="70dp"
+                        android:layout_weight="1"
+
+                        />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/order1"
+        android:text="Confirm Order"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:background="@color/pink"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"/>
+
+</RelativeLayout>

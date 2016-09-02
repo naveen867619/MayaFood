@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/maintoolbar"
+            android:background="@color/pink">
+
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:weightSum="3"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/head"
+                    android:textSize="@dimen/about"
+                    android:textColor="@color/pink"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/maya1"/>
+                <View
+                    android:layout_width="165dp"
+                    android:layout_height="2dp"
+                    android:background="@color/pink"></View>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="@dimen/about"
+                    android:textColor="@color/pink"
+                    android:text="@string/maya"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/about"
+                    android:textColor="@color/pink"
+                    android:text="@string/maya1"
+                    />
+            </LinearLayout>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="50dp"
+                android:scrollbars="none">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="9"
+                    android:orientation="vertical"
+                    >
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/namelay"
+                        >
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:hint="Name"
+                            android:textColor="#000000"
+                            android:ems="5"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/name"
+                            />
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/mobnolay"
+                        >
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Mobile NO"
+                            android:inputType="number"
+                            android:textColor="#000000"
+                            android:id="@+id/mobno"
+                            />
+                    </android.support.design.widget.TextInputLayout>
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/screenno"></Spinner>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#4d4c4c"></View>
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/seatno"></Spinner>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#4d4c4c"></View>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/showtimelay"
+                        >
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Show Time"
+                            android:textColor="#000000"
+                            android:id="@+id/showtime"
+                            />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/datelay"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="15dp"
+                            android:textSize="18dp"
+                            android:textColor="#000000"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/date"
+                            android:ems="10"
+                            android:layout_marginBottom="10dp"
+                            android:hint="Order Date"
+                            android:inputType="date"
+                            />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#4d4c4c"></View>
+                    </android.support.design.widget.TextInputLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="25dp"
+                        android:textSize="18dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/time"
+                        android:textColor="#000000"
+                        android:ems="10"
+                        android:layout_marginBottom="10dp"
+                        android:hint="Order time"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#4d4c4c"></View>
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/cash">
+
+                    </Spinner>
+
+
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/next"
+        android:text="NEXT"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:background="@color/pink"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"/>
+</RelativeLayout>

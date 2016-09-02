@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#f46a5b</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="pink">#ed5b4b</color>
+    <color name="skyBlue">#ffffff</color>
+    <color name="ColorName">#0004ff</color>
+    <color name="ColorName1">#000000</color>
+    <color name="ColorName2">#fc4d64</color>
+    <color name="refresh_progress_2">#4056ff</color>
+    <color name="black_line">#11c6f3</color>
+    <color name="edit_text_name">#cbcbcb</color>
+
+</resources>

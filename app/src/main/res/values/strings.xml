@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Mayajaal(Food and Beverage)</string>
+
+    <string name="logo_desc">App logo</string>
+    <string name="maya">Order Food and Beverage while</string>
+    <string name="maya1">watching your movie or interval</string>
+    <string name="it">Items</string>
+    <string name="head"><U>Mayajaal Cinemas</U></string>
+    <string name="second">Select Your Qty</string>
+    <string name="spinner_title">Select Category</string>
+    <string name="choose_quantity">Choose Quantity</string>
+    <string name="confirm_order">Confirm Order</string>
+    <string name="rupee_symbol">\u20A8</string>
+    <string name="total">Total</string>
+    <string name="choose_gmail">Choose Gmail...</string>
+    <string name="choose_food">Please choose food!</string>
+    <string name="total_price">Total Price</string>
+    <string name="check_internet_conncetion">check your internet connectivity</string>
+    <string name="oops_time_out">Oops! TimeOut.</string>
+    <string name="alert">Alert</string>
+    <string name="ok">Ok</string>
+
+</resources>

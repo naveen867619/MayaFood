@@ -1,0 +1,206 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/maintoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/pink"
+        android:minHeight="?attr/actionBarSize" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/about"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/pink"
+        android:layout_marginStart="90dp"
+
+        android:text="@string/head"
+        android:id="@+id/textView3" />
+
+    <View
+        android:layout_width="165dp"
+        android:layout_marginStart="90dp"
+        android:layout_height="1dp"
+        android:background="@color/pink"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/about"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/pink"
+        android:layout_marginStart="30dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/maya"
+        android:id="@+id/textView4" />
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+    <!-- Name Label -->
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+
+        android:layout_marginBottom="0dp">
+        <EditText android:id="@+id/edname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            android:hint="Name" />
+    </android.support.design.widget.TextInputLayout>
+    <!--  Email Label -->
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp">
+        <EditText android:id="@+id/edmobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Mobile Number" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp">
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:id="@+id/espinner"
+            android:popupBackground="#ffffff"
+            android:spinnerMode="dropdown"
+            >
+        </Spinner>
+    </android.support.design.widget.TextInputLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"/>
+
+
+            <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp">
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:id="@+id/seatspinner"
+            android:popupBackground="#ffffff"
+            android:spinnerMode="dropdown"
+            >
+        </Spinner>
+    </android.support.design.widget.TextInputLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"/>
+
+
+    <!-- Password Label -->
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp">
+        <EditText android:id="@+id/edmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Show Time"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp">
+        <EditText android:id="@+id/edaddresss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            android:hint="Order Date" />
+    </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp">
+                <EditText android:id="@+id/daddresss"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:hint="Order Time" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp">
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:background="@drawable/mybg"
+                    android:id="@+id/cashspinner"
+                    android:popupBackground="#ffffff"
+                    android:spinnerMode="dropdown"
+                    >
+                </Spinner>
+            </android.support.design.widget.TextInputLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/pink"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/angry_btn"
+            android:layout_marginStart="50dp"
+            android:text="NEXT"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:layout_width="270dp"
+            android:layout_height="60dp"
+            android:background="@drawable/button"
+            android:shadowColor="#ff0004"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+    </LinearLayout>
+
+
+
